@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./technicaldocument.css" />
+    <title>Azure Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Azure Cloud Computing</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#Types_of_Cloud"
+            >Types of Cloud</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Benefits_of_Cloud">Benefits of Cloud</a></li>
+        <li><a class="nav-link" href="#CapEx_vs_OpEx">CapEx vs OpEx</a></li>
+        <li>
+          <a class="nav-link" href="#Consumption_Based_Model"
+            >Consumption Based Model</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Cloud_Services">Cloud Services</a></li>
+        <li>
+          <a class="nav-link" href="#Shared_Responsibility_Model">Shared Responsibility Model</a>
+        </li>
+        <li><a class="nav-link" href="#Serverless_Computing">Serverless Computing</a></li>
+        <li><a class="nav-link" href="#Core_Azure_Architectural_Components">Core Azure Architectural Components</a></li>
+        <li>
+          <a class="nav-link" href="#Core_Azure_Workloads"
+            >Core Azure Workloads</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Core Azure Solutions">Core Azure Solutions</a></li>
+        <li>
+          <a class="nav-link" href="#Azure_Management_Tools"
+            >Azure Management Tools</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Security_Tools_Features">Security Tools & Features</a></li>
+        <li><a class="nav-link" href="#Secure_Network_Connectivity">Secure Network Connectivity</a></li>
+        <li><a class="nav-link" href="#Identity_Governance">Identity & Governance</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Cloud Computing is the delivery of computing services over the internet, enabling faster innovation, flexible resources, and economies of scale.
+            Azure is a cloud computing platform provided by Microsoft. It offers a wide range of services and tools that enable businesses and developers to build, deploy, and manage applications and services through Microsoft-managed data centers.
+          </p>
+          <p>Here are some key aspects of Azure:</p>
+          <ul>
+            <li>Infrastructure as a Service (IaaS)</li>
+            <li>Platform as a Service (PaaS)</li>
+            <li>Software as a Service (SaaS)</li>
+            <li>Data storage and analytics</li>
+            <li>Security and Identity</li>
+            <li>DevOps and Continuous Integration/Continuous Deployment (CI/CD)</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Types_of_Cloud">
+        <header>Types of Cloud</header>
+        <article>
+          <p>
+            There are three types of cloud:
+          </p>
+          <ol>
+            <li>Public Clouds
+              <ul>
+                <li>Owned by cloud services or hosting provider</li>
+                <li>Provides resources and services to multiple organizations and users</li>
+                <li>Accessed via secure network connection (typically over the internet)</li>
+              </ul>
+            </li>
+            <li>Private Cloud
+              <ul>
+                <li>Organizations create a cloud environment in their datacenter</li>
+                <li>Organization is responsible for operating the services they provide</li>
+                <li>Does not provide access to users outside of the organization.</li>
+              </ul>
+            </li>
+            <li>Hybrid Cloud
+              <ul>
+                <li>Combines Public and Private clouds to allow applications to run in the most appropriate location.</li>
+              </ul>
+            </li>
+          </ol>          
+        </article>
+      </section>
+      <section class="main-section" id="Benefits_of_Cloud">
+        <header>Benefits of Cloud</header>
+        <article>
+          Here are some benefits of cloud:
+          <ul>
+            <li>High Availability</li>
+            <li>Scalability</li>
+            <li>Global Reach</li>
+            <li>Agility</li>
+            <li>Fault Tolerance</li>
+            <li>Elasticity</li>
+            <li>Customer Latency Capabilities</li>
+            <li>Predictive Cost Considerations</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="CapEx_vs_OpEx">
+        <header>CapEx vs OpEx</header>
+        
+        <p>Capital Expenditure(CapEx)</p>
+        <ul>
+          <li>The up front spending of money on physical infrastructure</li>
+          <li>Costs from CapEx have a value that reduces over time</li>
+        </ul>
+        <p>Operational Expenditure(OpEx)</p>
+        <ul>
+          <li>The spending and billing of services or products as needed</li>
+          <li>Expenses are deducted in the same year</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Consumption_Based_Model">
+        <header>Consumption Based Model</header>
+        <article>
+          Cloud service providers operate on a consumption based model, which means that end users only pay for the resources that they use. Whatever they use is what they pay for.
+          <ul>
+            <li>Better cost prediction</li>
+            <li>Prices for individual resources and services are provided</li>
+            <li>Billing is based on actual usage</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Cloud_Services">
+        <header>Cloud Services</header>
+        <article>
+          <p>Infrastructure as a Service(IaaS)</p>
+          <p>
+            Build pay as you go IT infrastructure by renting servers, virtual machines, storage, networks, and operating systems from a cloud provider.
+          </p>
+          <p>Platform as a Service(PaaS)</p>
+          <p>
+            Provides environment for building, testing, and deploying software applications; without focusing on managing underlying infrastructure.
+          </p>
+          <p>Software as a Service(SaaS)</p>
+          <p>
+            Users connect to and use cloud based apps over the internet: for example, Microsoft Office 365, email, and calendars.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Shared_Responsibility_Model">
+        <header>Shared Responsibility Model</header>
+        <article>
+          <img src="./technical-doc-1.png" alt="shared-responsibility model">
+        </article>
+      </section>
+      <section class="main-section" id="Serverless_Computing">
+        <header>Serverless Computing</header>
+        <article>
+          <p>
+            Azure Functions is code running your service and not the underlying platform or infrastructure. It creates infrastructure based on an event
+          </p>
+          <p>
+            Azure Logic Apps is a cloud service that helps you automate and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services.
+          </p>
+          <p>
+            With serverless computing applications , the cloud service provider automatically provisions, scales, and manages the infrastructure required
+ to run the code. 
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Core_Azure_Architectural_Components">
+        <header>Core Azure Architectural Components</header>
+        <article>
+          <p>The latest ECMAScript standard defines seven data types:</p>
+          <ul>
+            <li>
+              <p>Six data types that are primitives:</p>
+              <ul>
+                <li>Boolean. true and false.</li>
+                <li>
+                  null. A special keyword denoting a null value. Because
+                  JavaScript is case-sensitive, null is not the same as Null,
+                  NULL, or any other variant.
+                </li>
+                <li>
+                  undefined. A top-level property whose value is undefined.
+                </li>
+                <li>Number. 42 or 3.14159.</li>
+                <li>String. "Howdy"</li>
+                <li>
+                  Symbol (new in ECMAScript 2015). A data type whose instances
+                  are unique and immutable.
+                </li>
+              </ul>
+            </li>
+
+            <li>and Object</li>
+          </ul>
+          Although these data types are a relatively small amount, they enable
+          you to perform useful functions with your applications. Objects and
+          functions are the other fundamental elements in the language. You can
+          think of objects as named containers for values, and functions as
+          procedures that your application can perform.
+        </article>
+      </section>
+      <section class="main-section" id="Core_Azure_Workloads">
+        <header>Core Azure Workloads</header>
+        <article>
+          Use the if statement to execute a statement if a logical condition is
+          true. Use the optional else clause to execute a statement if the
+          condition is false. An if statement looks as follows:
+
+          <code>if (condition) { statement_1; } else { statement_2; }</code>
+          condition can be any expression that evaluates to true or false. See
+          Boolean for an explanation of what evaluates to true and false. If
+          condition evaluates to true, statement_1 is executed; otherwise,
+          statement_2 is executed. statement_1 and statement_2 can be any
+          statement, including further nested if statements.
+          <p>
+            You may also compound the statements using else if to have multiple
+            conditions tested in sequence, as follows:
+          </p>
+          <code
+            >if (condition_1) { statement_1; } else if (condition_2) {
+            statement_2; } else if (condition_n) { statement_n; } else {
+            statement_last; }
+          </code>
+          In the case of multiple conditions only the first logical condition
+          which evaluates to true will be executed. To execute multiple
+          statements, group them within a block statement ({ ... }) . In
+          general, it's good practice to always use block statements, especially
+          when nesting if statements:
+
+          <code
+            >if (condition) { statement_1_runs_if_condition_is_true;
+            statement_2_runs_if_condition_is_true; } else {
+            statement_3_runs_if_condition_is_false;
+            statement_4_runs_if_condition_is_false; }</code
+          >
+          It is advisable to not use simple assignments in a conditional
+          expression, because the assignment can be confused with equality when
+          glancing over the code. For example, do not use the following code:
+          <code>if (x = y) { /* statements here */ }</code> If you need to use
+          an assignment in a conditional expression, a common practice is to put
+          additional parentheses around the assignment. For example:
+
+          <code>if ((x = y)) { /* statements here */ }</code>
+        </article>
+      </section>
+      <section class="main-section" id="Core_Azure_Solutions">
+        <header>Core Azure Solutions</header>
+        <article>
+          A while statement executes its statements as long as a specified
+          condition evaluates to true. A while statement looks as follows:
+
+          <code>while (condition) statement</code> If the condition becomes
+          false, statement within the loop stops executing and control passes to
+          the statement following the loop.
+
+          <p>
+            The condition test occurs before statement in the loop is executed.
+            If the condition returns true, statement is executed and the
+            condition is tested again. If the condition returns false, execution
+            stops and control is passed to the statement following while.
+          </p>
+
+          <p>
+            To execute multiple statements, use a block statement ({ ... }) to
+            group those statements.
+          </p>
+
+          Example:
+
+          <p>
+            The following while loop iterates as long as n is less than three:
+          </p>
+
+          <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+          <p>
+            With each iteration, the loop increments n and adds that value to x.
+            Therefore, x and n take on the following values:
+          </p>
+
+          <ul>
+            <li>After the first pass: n = 1 and x = 1</li>
+            <li>After the second pass: n = 2 and x = 3</li>
+            <li>After the third pass: n = 3 and x = 6</li>
+          </ul>
+          <p>
+            After completing the third pass, the condition n &lt; 3 is no longer
+            true, so the loop terminates.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Azure_Management_Tools">
+        <header>Azure Management Tools</header>
+        <article>
+          A function definition (also called a function declaration, or function
+          statement) consists of the function keyword, followed by:
+
+          <ul>
+            <li>The name of the function.</li>
+            <li>
+              A list of arguments to the function, enclosed in parentheses and
+              separated by commas.
+            </li>
+            <li>
+              The JavaScript statements that define the function, enclosed in
+              curly brackets, { }.
+            </li>
+          </ul>
+          <p>
+            For example, the following code defines a simple function named
+            square:
+          </p>
+
+          <code>function square(number) { return number * number; }</code>
+          <p>
+            The function square takes one argument, called number. The function
+            consists of one statement that says to return the argument of the
+            function (that is, number) multiplied by itself. The return
+            statement specifies the value returned by the function.
+          </p>
+          <code>return number * number;</code>
+          <p>
+            Primitive parameters (such as a number) are passed to functions by
+            value; the value is passed to the function, but if the function
+            changes the value of the parameter, this change is not reflected
+            globally or in the calling function.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Security_Tools_Features">
+        <header>Security Tools & Features</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Secure_Network_Connectivity">
+        <header>Secure Network Connectivity</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Identity_Governance">
+        <header>Identity & Governance</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                target="_blank"
+                >MDN</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
